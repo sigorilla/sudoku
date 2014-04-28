@@ -1,17 +1,6 @@
-#include <QDrag>
-#include <QMimeData>
-#include <QByteArray>
-#include <QDataStream>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QSpacerItem>
-#include <QScrollArea>
-#include <QDesktopWidget>
-#include "QTime"
-
-#include "mainwindow.h"
-#include "ui_mainwindow_my.h"
-#include "settings.h"
+#include "headers/mainwindow.h"
+#include "headers/ui_mainwindow_my.h"
+#include "headers/settings.h"
 
 QTime midnight(0, 0, 0);
 

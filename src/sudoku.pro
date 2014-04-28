@@ -16,9 +16,10 @@ SOURCES += main.cpp\
     sudoku.cpp \
     settings.cpp
 
-HEADERS  += mainwindow.h\
-    ui_mainwindow_my.h \
-    sudoku.h \
-    settings.h
+HEADERS  += headers\mainwindow.h \
+		headers\ui_mainwindow_my.h \
+		headers\sudoku.h \
+		headers\settings.h \
+		headers\other.h
 
 RESOURCES += files.qrc

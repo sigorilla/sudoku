@@ -1,20 +1,7 @@
 #ifndef SUDOKU_H
 #define SUDOKU_H
 
-#include <QObject>
-#include <QLineEdit>
-#include <QString>
-#include <QList>
-#include <QDebug>
-#include <QMessageBox>
-#include <QGridLayout>
-#include <QLabel>
-#include <QMouseEvent>
-#include <QDrag>
-#include <QApplication>
-#include <QMimeData>
-#include <QPixmap>
-#include <QPoint>
+#include "other.h"
 
 class Sudoku : public QWidget
 {

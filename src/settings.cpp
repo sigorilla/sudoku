@@ -1,15 +1,4 @@
-#include "settings.h"
-
-#include <QDrag>
-#include <QMimeData>
-#include <QByteArray>
-#include <QDataStream>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QSpacerItem>
-#include <QListWidget>
-#include <QStackedWidget>
-#include <QGroupBox>
+#include "headers/settings.h"
 
 Settings::Settings(QWidget *parent) : QDialog(parent) {
   name = "Settings";

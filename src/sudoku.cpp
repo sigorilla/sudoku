@@ -1,6 +1,4 @@
-#include "sudoku.h"
-#include <QIntValidator>
-#include "QTime"
+#include "headers\sudoku.h"
 
 Sudoku::Sudoku(QWidget *parent) {
 //  setAcceptDrops(true);

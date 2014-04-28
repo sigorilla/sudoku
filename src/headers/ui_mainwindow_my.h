@@ -1,18 +1,7 @@
 #ifndef UI_MAINWINDOW_H
 #define UI_MAINWINDOW_H
 
-#include <QtCore/QVariant>
-#include <QtWidgets/QAction>
-#include <QtWidgets/QApplication>
-#include <QtWidgets/QButtonGroup>
-#include <QtWidgets/QHeaderView>
-#include <QtWidgets/QMainWindow>
-#include <QtWidgets/QMenuBar>
-#include <QtWidgets/QStatusBar>
-#include <QtWidgets/QToolBar>
-#include <QtWidgets/QWidget>
-#include <QtWidgets/QPushButton>
-#include <QtWidgets/QToolButton>
+#include "other.h"
 
 QT_BEGIN_NAMESPACE
 
@@ -33,8 +22,6 @@ class Ui_MainWindow
   QAction *actionAbout;
   QAction *actionLogin;
   QAction *actionSet;
-  QAction *actionServer;
-  QAction *actionClient;
   QMenuBar *menuBar;
   QMenu *menuFile;
   QMenu *menuGame;
@@ -80,10 +67,6 @@ class Ui_MainWindow
     actionLogin->setObjectName(QStringLiteral("actionLogin"));
     actionSet = new QAction(MainWindow);
     actionSet->setObjectName(QStringLiteral("actionSet"));
-    actionServer = new QAction(MainWindow);
-    actionServer->setObjectName(QStringLiteral("actionServer"));
-    actionClient = new QAction(MainWindow);
-    actionClient->setObjectName(QStringLiteral("actionClient"));
 
     menuBar = new QMenuBar(MainWindow);
     menuFile = new QMenu(menuBar);
@@ -109,24 +92,23 @@ class Ui_MainWindow
     MainWindow->setStatusBar(statusBar);
 
     menuBar->addAction(menuFile->menuAction());
-//    menuBar->addAction(menuGame->menuAction());
+    menuBar->addAction(menuGame->menuAction());
     menuBar->addAction(menuHelp->menuAction());
+
     menuFile->addAction(actionNew);
     menuFile->addAction(actionOpen);
     menuFile->addAction(actionSave);
     menuFile->addAction(actionSaveAs);
     menuFile->addSeparator();
-    menuFile->addAction(actionClear);
-    menuFile->addAction(actionLoad);
-    menuFile->addAction(actionCreate);
-    menuFile->addAction(actionSolve);
-
-    menuFile->addSeparator();
     menuFile->addAction(actionSet);
     menuFile->addSeparator();
     menuFile->addAction(actionQuit);
-    menuGame->addAction(actionServer);
-    menuGame->addAction(actionClient);
+
+    menuGame->addAction(actionClear);
+    menuGame->addAction(actionLoad);
+    menuGame->addAction(actionCreate);
+    menuGame->addAction(actionSolve);
+
     menuHelp->addAction(actionHelp);
     menuHelp->addAction(actionAbout);
 

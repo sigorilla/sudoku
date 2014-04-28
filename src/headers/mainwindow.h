@@ -3,37 +3,7 @@
 
 #include <stdlib.h>
 
-#include <QMainWindow>
-#include <QMessageBox>
-#include <QFileDialog>
-#include <QWidget>
-#include <QVBoxLayout>
-#include <QHBoxLayout>
-#include <QGridLayout>
-#include <QList>
-#include <QMap>
-#include <QPushButton>
-#include <QLineEdit>
-#include <QLabel>
-#include <QSpacerItem>
-#include <QSizePolicy>
-#include <QFuture>
-#include <QFutureWatcher>
-#include <QtConcurrent/QtConcurrentRun>
-#include <QString>
-#include <QIcon>
-#include <QChar>
-#include <QMovie>
-#include <QFile>
-#include <QDebug>
-#include <QIntValidator>
-#include <QKeyEvent>
-#include <QMouseEvent>
-#include <QMutex>
-#include <QJsonDocument>
-#include <QJsonObject>
-#include <QJsonArray>
-
+#include "other.h"
 #include "sudoku.h"
 #include "settings.h"
 
