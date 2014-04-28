@@ -1,0 +1,19 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/icon.gif</file>
+        <file>style.qss</file>
+        <file>images/ajax-loader.gif</file>
+        <file>images/sudoku.gif</file>
+        <file>images/create.png</file>
+        <file>images/clear.gif</file>
+        <file>images/solve.gif</file>
+        <file>images/open.gif</file>
+        <file>images/help.gif</file>
+        <file>images/new.gif</file>
+        <file>images/quit.gif</file>
+        <file>images/save.gif</file>
+        <file>images/load.gif</file>
+        <file>images/about.gif</file>
+        <file>images/set.gif</file>
+    </qresource>
+</RCC>
